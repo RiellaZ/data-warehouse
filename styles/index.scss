@@ -1,0 +1,124 @@
+$first-color: #4B5D68;
+$second-color: #212353;
+$third-color: #9C69E2;
+$fourth-color: #F063B8;
+$fifth-color: #68C9BA;
+
+$primary-font: 'Helvetica', 'Arial', sans-serif;
+$secondary-font: 'Nunito', sans-serif;
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #CFEBFF 0%, #FFFFFF 19.4%);
+}
+
+.header {
+    max-width: 1120px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+.header_logo--dot {
+    padding-left: 20px;
+    align-self: flex-end;
+}
+
+.header_logo--rectangle {
+    padding-left: 10px;
+}
+
+.header_nav--list {
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+}
+
+.header_nav--list>a {
+    text-decoration: none;
+    color: $first-color;
+}
+
+a:hover {
+    color: $second-color;
+    font-weight: bold;
+}
+
+.header_button {
+    margin-left: 200px;;
+    width: 210px;
+    height: 60px;
+    border-radius: 50px;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-style: none;
+    background-color: #FFFFFF;
+    color: $second-color;
+    font-family: $primary-font;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 160%;
+    box-sizing: border-box;
+}
+
+.header_button:hover {
+    font-weight: bold;
+}
+
+.fa-arrow-right {
+    color: $third-color;
+    width: 20px;
+    height: 14px;
+    left: 1311px;
+    top: 73px;
+    padding-left: 20px;
+}
+
+.headline {
+    max-width: 1120px;
+    margin-left: auto;
+}
+
+.headline_box {
+    width: 645px;
+    height: 464px;
+}
+
+.headline_title {
+    font-family: $primary-font;
+    color: $second-color;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.headline_text {
+    font-family: $secondary-font;
+    color: $first-color;
+    font-style: normal;
+    font-size: 16px;
+    height: 120px;
+    width: 380px;
+}
+
+.headline_button {
+    border-radius: 50px;
+    width: 170px;
+    height: 60px;
+    left: 240px;
+    top: 644px;
+    border-style: none;
+    background-color: $third-color;
+    color: #FFFFFF;
+    font-family: $secondary-font;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.headline_button:hover {
+    font-weight: bold;
+}
