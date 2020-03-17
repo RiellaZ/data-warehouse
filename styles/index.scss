@@ -11,17 +11,15 @@ body {
     margin: 0;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(180deg, #CFEBFF 0%, #FFFFFF 19.4%);
 }
 
 .header {
     max-width: 1120px;
-    height: 60px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     box-sizing: border-box;
-    margin-left: auto;
-    margin-top: 50px;
+    padding-top: 50px;
+    margin-left: 240px;
 }
 
 .header_logo--dot {
@@ -36,7 +34,9 @@ body {
 .header_nav--list {
     list-style: none;
     display: flex;
-    margin-left: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 20px;
 }
 
 .header_nav--list>a {
@@ -50,7 +50,8 @@ a:hover {
 }
 
 .header_button {
-    margin-left: 200px;;
+    margin-left: auto;
+    margin-right: 240px;
     width: 210px;
     height: 60px;
     border-radius: 50px;
@@ -79,13 +80,16 @@ a:hover {
 }
 
 .headline {
-    max-width: 1120px;
-    margin-left: auto;
+    max-width: 1248px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 .headline_box {
     width: 645px;
     height: 464px;
+    margin-top: 10%;
 }
 
 .headline_title {
@@ -94,6 +98,9 @@ a:hover {
     font-style: normal;
     font-weight: bold;
     font-size: 60px;
+    width: 645px;
+    height: 184px;
+    margin-left: 50%;
 }
 
 .headline_text {
@@ -103,22 +110,75 @@ a:hover {
     font-size: 16px;
     height: 120px;
     width: 380px;
+    margin-left: 50%;
+    padding-top: 40px;
 }
 
 .headline_button {
-    border-radius: 50px;
     width: 170px;
     height: 60px;
     left: 240px;
     top: 644px;
     border-style: none;
+    border-radius: 50px;
     background-color: $third-color;
     color: #FFFFFF;
     font-family: $secondary-font;
     font-style: normal;
     font-size: 18px;
+    margin-top: 10%;
+    margin-left: 50%;
 }
 
 .headline_button:hover {
     font-weight: bold;
+}
+
+.headline_img {
+    width: 885px;
+    height: 468px;
+    margin-top: 30%;
+}
+
+.section_two {
+    width: 1117px;
+    height: 560px;
+    margin-left: 10%;
+    background: rgba(240, 99, 184, 0.15);
+    border-radius: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .section_two--img {
+        width: 400px;
+        height: 504px;
+        top: 935px;
+        box-sizing: border-box;
+    }
+
+    .section_two--info {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .section_two--title {
+        width: 475px;
+        height: 100px;
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        color: $second-color;
+    }
+
+    .section_two--text {
+        width: 474px;
+        height: 170px;
+        font-family: $secondary-font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+    }
 }
