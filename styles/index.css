@@ -172,3 +172,81 @@ a:hover {
   font-weight: 500;
   font-size: 18px;
 }
+
+.features {
+  width: 1137.28px;
+  height: 1026px;
+  margin-left: 30%;
+}
+
+.features_box {
+  width: 584px;
+  height: 160px;
+  left: 507.29px;
+}
+
+.features_title {
+  margin-left: 35%;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  color: #212353;
+}
+
+.features_text {
+  width: 584px;
+  height: 58px;
+  left: 507.29px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #4B5D68;
+}
+
+.features_content {
+  width: 442px;
+  height: 388px;
+  margin-left: 10%;
+  background-color: #68C9BA;
+  border-radius: 50px;
+  opacity: 0.1;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features_content--img {
+  width: 232px;
+  height: 211px;
+  left: 239px;
+  top: 1946px;
+}
+
+.features_content--info {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.features_content--title {
+  width: 200px;
+  height: 50px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.features_content--text {
+  width: 220px;
+  height: 160px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
