@@ -174,8 +174,8 @@ a:hover {
 }
 
 .features {
-  width: 1137.28px;
-  height: 1026px;
+  width: 584px;
+  height: 160px;
   margin-left: 30%;
 }
 
@@ -209,10 +209,10 @@ a:hover {
 .features_content {
   width: 442px;
   height: 388px;
+  margin-top: 10%;
   margin-left: 10%;
-  background-color: #68C9BA;
+  background-color: rgba(104, 201, 186, 0.1);
   border-radius: 50px;
-  opacity: 0.1;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -222,13 +222,12 @@ a:hover {
 .features_content--img {
   width: 232px;
   height: 211px;
-  left: 239px;
-  top: 1946px;
+  box-sizing: border-box;
 }
 
 .features_content--info {
   padding-left: 10%;
-  padding-right: 10%;
+  padding-right: 20%;
 }
 
 .features_content--title {
@@ -238,8 +237,6 @@ a:hover {
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
-  display: flex;
-  align-items: center;
 }
 
 .features_content--text {
