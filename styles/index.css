@@ -3,7 +3,7 @@ body {
   width: 100%;
   height: 100vh;
   background: linear-gradient(180deg, #CFEBFF, #FFFFFF);
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
 }
 
 .header {
@@ -13,7 +13,6 @@ body {
   justify-content: center;
   box-sizing: border-box;
   padding-top: 50px;
-  margin-left: 240px;
 }
 
 .header_logo--dot {
@@ -69,7 +68,7 @@ a:hover {
 }
 
 .headline {
-  max-width: 1248px;
+  max-width: 1120px;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
@@ -124,15 +123,16 @@ a:hover {
 }
 
 .headline_img {
-  width: 885px;
-  height: 468px;
+  width: 785px;
+  height: 368px;
   margin-top: 30%;
 }
 
 .section_two {
-  width: 1117px;
+  max-width: 1120px;
   height: 560px;
   margin-left: 10%;
+  margin-top: 20%;
   background: rgba(240, 99, 184, 0.15);
   border-radius: 50px;
   box-sizing: border-box;
@@ -169,15 +169,15 @@ a:hover {
 }
 
 .features {
-  width: 584px;
+  max-width: 584px;
   height: 160px;
   margin-left: 30%;
+  margin-top: 10%;
 }
 
 .features_box {
-  width: 584px;
+  max-width: 584px;
   height: 160px;
-  left: 507.29px;
 }
 
 .features_title {
@@ -190,9 +190,8 @@ a:hover {
 }
 
 .features_text {
-  width: 584px;
+  max-width: 584px;
   height: 58px;
-  left: 507.29px;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -202,13 +201,21 @@ a:hover {
 }
 
 .grid {
+  max-width: 1120px;
+  margin-left: 10%;
   display: grid;
-  grid-template-columns: repeat(7, 14.285);
-  grid-template-rows: repeat(9, 14.285);
+  grid-template-columns: repeat(7, auto);
+  grid-template-rows: repeat(9, auto);
 }
 
+@media screen and (max-width: 800px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .features_search {
-  width: 442px;
+  max-width: 442px;
   height: 388px;
   margin-top: 10%;
   margin-left: 20%;
@@ -278,7 +285,7 @@ a:hover {
 }
 
 .features_access {
-  width: 442px;
+  max-width: 442px;
   height: 394.56px;
   margin-top: 10%;
   margin-left: 20%;
@@ -324,7 +331,7 @@ a:hover {
 }
 
 .features_print {
-  width: 442px;
+  max-width: 442px;
   height: 358px;
   margin-top: 10%;
   margin-left: 20%;
@@ -374,7 +381,7 @@ a:hover {
 }
 
 .features_security {
-  width: 442px;
+  max-width: 442px;
   height: 364px;
   margin-top: 10%;
   margin-left: 20%;
