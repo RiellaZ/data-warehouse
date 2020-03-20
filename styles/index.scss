@@ -51,7 +51,7 @@ a:hover {
     font-weight: bold;
 }
 
-.header_button {
+.header_button, %header_button {
     width: 210px;
     height: 60px;
     border-radius: 50px;
@@ -70,7 +70,7 @@ a:hover {
     font-weight: bold;
 }
 
-.fa-arrow-right {
+.fa-arrow-right %header_button {
     color: $third-color;
     width: 20px;
     height: 14px;
@@ -111,7 +111,7 @@ a:hover {
     padding-top: 40px;
 }
 
-.headline_button {
+.headline_button, %button {
     width: 170px;
     height: 60px;
     left: 240px;
@@ -452,4 +452,129 @@ a:hover {
 
 .features_button {
     @extend %features_button;
+}
+
+.testimonials {
+    max-width: 1110px;
+    height: 709px;
+    margin-top: 15%;
+    background-color: $third-color;
+    border-radius: 50px;
+    margin-left: 10%;
+}
+
+.testimonials_container {
+    width: 405px;
+    height: 52px;
+    font-family: $primary-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    padding-left: 20%;
+    box-sizing: border-box;
+}
+
+.testimonials_info {
+    width: 645px;
+    height: 330px;
+    margin-left: 20%;
+    margin-top: 10%;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
+    border-radius: 20px;
+
+    .testimonials_img {
+        margin-top: 60px;
+        margin-left: 70px;
+        box-sizing: border-box;
+    }
+}
+
+.testimonials_box {
+    width: 385px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.testimonials_title {
+    width: 170px;
+    height: 29px;
+    margin: -80px 0px 0px 200px;
+    box-sizing: border-box;
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: $second-color;
+}
+
+h5 {
+    margin: 5px 0px 0px 200px;
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: $third-color;
+    box-sizing: border-box;
+}
+
+.testimonials_text {
+    width: 385px;
+    height: 130px;
+    margin-left: 200px;
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 180%;
+    color: $first-color;
+}
+
+.footer {
+    max-width: 1248px;
+    height: 761px;
+    border-top: 2px solid rgba(156, 105, 226, 0.2);
+}
+
+.footer_try {
+    width: 584px;
+    height: 101px;
+
+    h2 {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 130%;
+        color: $second-color;
+    }
+
+    h4 {
+        font-family: $secondary-font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 160%;
+        color: $first-color;
+    }
+}
+
+.footer_button--learn {
+    @extend %button;
+    background-color: $fourth-color;
+}
+
+.footer_button--demo {
+    @extend %header_button;
+}
+
+.footer_grid {
+    max-width: 1117px;
+height: 408px;
 }
