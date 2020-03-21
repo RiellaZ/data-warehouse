@@ -33,6 +33,13 @@ body {
     padding-left: 10px;
 }
 
+.header_nav {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+
 .header_nav--list {
     list-style: none;
     display: flex;
@@ -585,10 +592,19 @@ h5 {
 .footer_button--learn {
     @extend %button;
     background-color: $fourth-color;
+    margin-right: 20px;
+}
+
+.footer_button--learn:hover {
+    font-weight: bold;
 }
 
 .footer_button--demo {
     @extend %header_button;
+}
+
+.footer_button--demo:hover {
+    font-weight: bold;
 }
 
 .footer_grid {
@@ -706,5 +722,5 @@ h4 {
 .footer_img {
     width: 60px;
     height: 60px;
-    margin-left: 200%;
+    grid-column: 4/5;
 }

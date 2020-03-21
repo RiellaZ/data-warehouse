@@ -20,6 +20,13 @@ body {
   align-self: flex-end;
 }
 
+.header_nav {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+
 .header_nav--list {
   list-style: none;
   display: flex;
@@ -546,6 +553,15 @@ h5 {
 
 .footer_button--learn {
   background-color: #F063B8;
+  margin-right: 20px;
+}
+
+.footer_button--learn:hover {
+  font-weight: bold;
+}
+
+.footer_button--demo:hover {
+  font-weight: bold;
 }
 
 .footer_grid {
@@ -652,5 +668,5 @@ h4 {
 .footer_img {
   width: 60px;
   height: 60px;
-  margin-left: 200%;
+  grid-column: 4/5;
 }
