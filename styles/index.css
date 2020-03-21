@@ -15,13 +15,9 @@ body {
   padding-top: 50px;
 }
 
-.header_logo--dot {
+.header_logo--dot .footer_logo--rectangle, .header_logo--dot .footer_logo--dot {
   padding-left: 20px;
   align-self: flex-end;
-}
-
-.header_logo--rectangle {
-  padding-left: 10px;
 }
 
 .header_nav--list {
@@ -541,4 +537,88 @@ h5 {
 .footer_grid {
   max-width: 1117px;
   height: 408px;
+}
+
+h4 {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 160%;
+}
+
+.footer_list {
+  width: 166px;
+  height: 220px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #212353;
+  list-style: none;
+}
+.footer_list .about:hover {
+  font-weight: bold;
+}
+.footer_list .about > a {
+  text-decoration: none;
+  color: #212353;
+}
+.footer_list .help:hover {
+  font-weight: bold;
+}
+.footer_list .help > a {
+  text-decoration: none;
+  color: #212353;
+}
+.footer_list .social:hover {
+  font-weight: bold;
+}
+.footer_list .social > a {
+  text-decoration: none;
+  color: #212353;
+}
+
+.profile > a {
+  text-decoration: none;
+  color: #212353;
+}
+
+.footer_features > a {
+  text-decoration: none;
+  color: #212353;
+}
+
+.careers > a {
+  text-decoration: none;
+  color: #212353;
+}
+
+.news > a {
+  text-decoration: none;
+  color: #212353;
+}
+
+.signup > a {
+  text-decoration: none;
+  color: #212353;
+}
+
+.guide > a {
+  text-decoration: none;
+  color: #212353;
+}
+
+.reports > a {
+  text-decoration: none;
+  color: #212353;
+}
+
+.qa > a {
+  text-decoration: none;
+  color: #212353;
+}
+
+.footer_img {
+  width: 60px;
+  height: 60px;
 }

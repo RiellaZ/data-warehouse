@@ -24,12 +24,12 @@ body {
     padding-top: 50px;
 }
 
-.header_logo--dot {
+.header_logo--dot %logo-dot {
     padding-left: 20px;
     align-self: flex-end;
 }
 
-.header_logo--rectangle {
+.header_logo--rectangle %logo-rect{
     padding-left: 10px;
 }
 
@@ -575,6 +575,114 @@ h5 {
 }
 
 .footer_grid {
-    max-width: 1117px;
-height: 408px;
+    max-width: 1110px;
+    height: 408px;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.footer_logo--dot {
+    @extend %logo-dot;
+}
+
+.footer_logo--rectangle {
+    @extend %logo-dot;
+}
+
+h4 {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 160%;
+}
+
+.grid_group {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.footer_list {
+    width: 166px;
+    height: 220px;
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: normal;
+    color: $second-color;
+    list-style: none;
+
+    .about {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    .about:hover {
+        font-weight: bold;
+    }
+    .about>a {
+        text-decoration: none;
+        color: $second-color;
+    }
+    
+    .help:hover {
+        font-weight: bold;
+    }
+    .help>a {
+        text-decoration: none;
+        color: $second-color;
+    }
+    
+    .social:hover {
+        font-weight: bold;
+    }
+    .social>a {
+        text-decoration: none;
+        color: $second-color;
+    }
+}
+
+.profile>a {
+    text-decoration: none;
+    color: $second-color;
+}
+
+.footer_features>a {
+    text-decoration: none;
+    color: $second-color;
+}
+
+.careers>a {
+    text-decoration: none;
+    color: $second-color;
+}
+
+.news>a {
+    text-decoration: none;
+    color: $second-color;
+}
+
+.signup>a {
+    text-decoration: none;
+    color: $second-color;
+}
+
+.guide>a {
+    text-decoration: none;
+    color: $second-color;
+}
+
+.reports>a {
+    text-decoration: none;
+    color: $second-color;
+}
+
+.qa>a {
+    text-decoration: none;
+    color: $second-color;
+}
+
+.footer_img {
+    width: 60px;
+    height: 60px;
 }
