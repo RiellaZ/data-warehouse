@@ -71,16 +71,23 @@ a:hover {
 }
 
 .headline {
-  width: 1120px;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
+  padding: 20px;
+}
+
+.headline_container {
+  max-width: 1120px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .headline_box {
-  width: 645px;
-  height: 464px;
-  margin-top: 10%;
+  flex-basis: 500px;
 }
 
 .headline_title {
@@ -88,10 +95,7 @@ a:hover {
   color: #212353;
   font-style: normal;
   font-weight: bold;
-  font-size: 60px;
-  width: 645px;
-  height: 184px;
-  margin-left: 50%;
+  font-size: 30px;
 }
 
 .headline_text {
@@ -99,10 +103,6 @@ a:hover {
   color: #4B5D68;
   font-style: normal;
   font-size: 16px;
-  height: 120px;
-  width: 380px;
-  margin-left: 50%;
-  padding-top: 40px;
 }
 
 .headline_button, .footer_button--learn {
@@ -116,17 +116,20 @@ a:hover {
   font-style: normal;
   font-size: 18px;
   margin-top: 10%;
-  margin-left: 50%;
 }
 
 .headline_button:hover {
   font-weight: bold;
 }
 
+.headline_img_container {
+  flex-basis: 450px;
+  min-width: 250px;
+}
+
 .headline_img {
   max-width: 785px;
-  max-height: 368px;
-  margin-top: 30%;
+  width: 100%;
 }
 
 @media screen and (max-width: 800px) {
@@ -136,30 +139,34 @@ a:hover {
   }
 }
 .section_two {
-  max-width: 1120px;
-  height: 560px;
-  margin-left: 10%;
-  margin-top: 20%;
-  background: rgba(240, 99, 184, 0.15);
-  border-radius: 50px;
+  width: 100%;
+  min-height: 730px;
+  padding: 20px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section_two .section_two--img {
-  width: 400px;
-  height: 504px;
-  top: 935px;
+.section_two .section_two_container {
+  max-width: 1120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
   box-sizing: border-box;
+  background: rgba(240, 99, 184, 0.15);
+  border-radius: 50px;
+}
+.section_two .section_two--img {
+  margin-right: 20px;
+  flex-basis: 477px;
+  flex-grow: 0;
 }
 .section_two .section_two--info {
-  padding-left: 10%;
-  padding-right: 10%;
+  flex-basis: 474px;
 }
 .section_two .section_two--title {
-  width: 475px;
-  height: 100px;
   font-family: "Helvetica", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -167,8 +174,6 @@ a:hover {
   color: #212353;
 }
 .section_two .section_two--text {
-  width: 474px;
-  height: 170px;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -436,57 +441,53 @@ a:hover {
 }
 
 .testimonials {
-  max-width: 1110px;
-  height: 709px;
-  margin-top: 15%;
-  background-color: #9C69E2;
-  border-radius: 50px;
-  margin-left: 10%;
-}
-
-.testimonials_container {
-  width: 405px;
-  height: 52px;
-  font-family: "Helvetica", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  color: #FFFFFF;
+  min-height: 709px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 10%;
-  padding-left: 20%;
-  box-sizing: border-box;
+  padding: 20px;
+}
+
+.testimonials_container {
+  max-width: 1120px;
+  background-color: #9C69E2;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.testimonials_heading {
+  flex-basis: 620px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  color: #FFFFFF;
 }
 
 .testimonials_info {
-  width: 645px;
-  height: 330px;
-  margin-left: 20%;
-  margin-top: 10%;
-  box-sizing: border-box;
+  max-width: 645px;
+  min-height: 330px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
   background: #FFFFFF;
   box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
   border-radius: 20px;
 }
 .testimonials_info .testimonials_img {
-  margin-top: 60px;
-  margin-left: 70px;
-  box-sizing: border-box;
+  flex-basis: 60px;
 }
 
-.testimonials_box {
-  width: 385px;
-  height: 200px;
-  box-sizing: border-box;
+.testimonials_smallbox {
+  flex-basis: 385px;
 }
 
 .testimonials_title {
-  width: 170px;
-  height: 29px;
-  margin: -80px 0px 0px 200px;
-  box-sizing: border-box;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -495,7 +496,6 @@ a:hover {
 }
 
 h5 {
-  margin: 5px 0px 0px 200px;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -505,9 +505,6 @@ h5 {
 }
 
 .testimonials_text {
-  width: 385px;
-  height: 130px;
-  margin-left: 200px;
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -523,16 +520,29 @@ h5 {
   }
 }
 .footer {
-  max-width: 1248px;
-  height: 761px;
-  margin-top: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_container {
   border-top: 2px solid rgba(156, 105, 226, 0.2);
+  max-width: 1120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer_heading {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer_try {
-  width: 584px;
-  height: 101px;
-  margin-top: 10%;
+  min-width: 584px;
 }
 .footer_try h2 {
   font-family: "Helvetica", "Arial", sans-serif;
@@ -566,7 +576,6 @@ h5 {
 
 .footer_grid {
   max-width: 1110px;
-  height: 408px;
   margin-top: 10%;
   margin-left: 10%;
   display: grid;
@@ -591,6 +600,7 @@ h4 {
   font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: normal;
+  line-height: 200%;
   color: #212353;
   list-style: none;
   grid-column: 2/3;
@@ -665,8 +675,22 @@ h4 {
   grid-column: 4/5;
 }
 
-.footer_img {
-  width: 60px;
-  height: 60px;
-  grid-column: 4/5;
+.social {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #212353;
+  margin-bottom: 0;
+}
+
+.footer_last {
+  display: flex;
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
